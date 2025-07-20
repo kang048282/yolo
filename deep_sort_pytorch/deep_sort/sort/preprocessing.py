@@ -1,6 +1,5 @@
 # vim: expandtab:ts=4:sw=4
 import numpy as np
-import cv2
 
 
 def non_max_suppression(boxes, max_bbox_overlap, scores=None):
@@ -11,9 +10,8 @@ def non_max_suppression(boxes, max_bbox_overlap, scores=None):
     .. [1] http://www.pyimagesearch.com/2015/02/16/
            faster-non-maximum-suppression-python/
 
-    Examples
+    Examples:
     --------
-
         >>> boxes = [d.roi for d in detections]
         >>> scores = [d.confidence for d in detections]
         >>> indices = non_max_suppression(boxes, max_bbox_overlap, scores)
@@ -28,7 +26,7 @@ def non_max_suppression(boxes, max_bbox_overlap, scores=None):
     scores : Optional[array_like]
         Detector confidence score.
 
-    Returns
+    Returns:
     -------
     List[int]
         Returns indices of detections that have survived non-maxima suppression.
@@ -66,8 +64,6 @@ def non_max_suppression(boxes, max_bbox_overlap, scores=None):
 
         overlap = (w * h) / area[idxs[:last]]
 
-        idxs = np.delete(
-            idxs, np.concatenate(
-                ([last], np.where(overlap > max_bbox_overlap)[0])))
+        idxs = np.delete(idxs, np.concatenate(([last], np.where(overlap > max_bbox_overlap)[0])))
 
     return pick

@@ -1,21 +1,19 @@
-import torch
-import torch.backends.cudnn as cudnn
-import torchvision
-
 import argparse
 import os
 
+import torch
+import torch.backends.cudnn as cudnn
+import torchvision
 from model import Net
 
 parser = argparse.ArgumentParser(description="Train on market1501")
-parser.add_argument("--data-dir", default='data', type=str)
+parser.add_argument("--data-dir", default="data", type=str)
 parser.add_argument("--no-cuda", action="store_true")
 parser.add_argument("--gpu-id", default=0, type=int)
 args = parser.parse_args()
 
 # device
-device = "cuda:{}".format(
-    args.gpu_id) if torch.cuda.is_available() and not args.no_cuda else "cpu"
+device = f"cuda:{args.gpu_id}" if torch.cuda.is_available() and not args.no_cuda else "cpu"
 if torch.cuda.is_available() and not args.no_cuda:
     cudnn.benchmark = True
 
@@ -23,28 +21,26 @@ if torch.cuda.is_available() and not args.no_cuda:
 root = args.data_dir
 query_dir = os.path.join(root, "query")
 gallery_dir = os.path.join(root, "gallery")
-transform = torchvision.transforms.Compose([
-    torchvision.transforms.Resize((128, 64)),
-    torchvision.transforms.ToTensor(),
-    torchvision.transforms.Normalize(
-        [0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-])
+transform = torchvision.transforms.Compose(
+    [
+        torchvision.transforms.Resize((128, 64)),
+        torchvision.transforms.ToTensor(),
+        torchvision.transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    ]
+)
 queryloader = torch.utils.data.DataLoader(
-    torchvision.datasets.ImageFolder(query_dir, transform=transform),
-    batch_size=64, shuffle=False
+    torchvision.datasets.ImageFolder(query_dir, transform=transform), batch_size=64, shuffle=False
 )
 galleryloader = torch.utils.data.DataLoader(
-    torchvision.datasets.ImageFolder(gallery_dir, transform=transform),
-    batch_size=64, shuffle=False
+    torchvision.datasets.ImageFolder(gallery_dir, transform=transform), batch_size=64, shuffle=False
 )
 
 # net definition
 net = Net(reid=True)
-assert os.path.isfile(
-    "./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
-print('Loading from checkpoint/ckpt.t7')
+assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
+print("Loading from checkpoint/ckpt.t7")
 checkpoint = torch.load("./checkpoint/ckpt.t7")
-net_dict = checkpoint['net_dict']
+net_dict = checkpoint["net_dict"]
 net.load_state_dict(net_dict, strict=False)
 net.eval()
 net.to(device)
@@ -71,10 +67,5 @@ with torch.no_grad():
 gallery_labels -= 2
 
 # save features
-features = {
-    "qf": query_features,
-    "ql": query_labels,
-    "gf": gallery_features,
-    "gl": gallery_labels
-}
+features = {"qf": query_features, "ql": query_labels, "gf": gallery_features, "gl": gallery_labels}
 torch.save(features, "features.pth")

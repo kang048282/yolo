@@ -1,3 +1,3 @@
-# Deep Sort 
+# Deep Sort
 
-This is the implemention of deep sort with pytorch.
+This is the implementation of deep sort with pytorch.

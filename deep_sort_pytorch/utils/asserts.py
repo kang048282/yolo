@@ -3,7 +3,7 @@ from os import environ
 
 def assert_in(file, files_to_check):
     if file not in files_to_check:
-        raise AssertionError("{} does not exist in the list".format(str(file)))
+        raise AssertionError(f"{str(file)} does not exist in the list")
     return True
 
 

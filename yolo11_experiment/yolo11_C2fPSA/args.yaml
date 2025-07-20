@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: 50
 cache: false
-device: '0'
+device: "0"
 workers: 8
 project: yolo11_experiment
 name: yolo11_C2fPSA

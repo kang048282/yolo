@@ -41,7 +41,7 @@ class Track:
         Feature vector of the detection this track originates from. If not None,
         this feature is added to the `features` cache.
 
-    Attributes
+    Attributes:
     ----------
     mean : ndarray
         Mean vector of the initial state distribution.
@@ -52,7 +52,7 @@ class Track:
     hits : int
         Total number of measurement updates.
     age : int
-        Total number of frames since first occurance.
+        Total number of frames since first occurrence.
     time_since_update : int
         Total number of frames since last measurement update.
     state : TrackState
@@ -63,8 +63,7 @@ class Track:
 
     """
 
-    def __init__(self, mean, covariance, track_id, n_init, max_age,oid,
-                 feature=None):
+    def __init__(self, mean, covariance, track_id, n_init, max_age, oid, feature=None):
         self.mean = mean
         self.covariance = covariance
         self.track_id = track_id
@@ -85,7 +84,7 @@ class Track:
         """Get current position in bounding box format `(top left x, top left y,
         width, height)`.
 
-        Returns
+        Returns:
         -------
         ndarray
             The bounding box.
@@ -100,7 +99,7 @@ class Track:
         """Get current position in bounding box format `(min x, miny, max x,
         max y)`.
 
-        Returns
+        Returns:
         -------
         ndarray
             The bounding box.
@@ -139,8 +138,7 @@ class Track:
             The associated detection.
 
         """
-        self.mean, self.covariance = kf.update(
-            self.mean, self.covariance, detection.to_xyah())
+        self.mean, self.covariance = kf.update(self.mean, self.covariance, detection.to_xyah())
         self.features.append(detection.feature)
 
         self.hits += 1
@@ -149,16 +147,14 @@ class Track:
             self.state = TrackState.Confirmed
 
     def mark_missed(self):
-        """Mark this track as missed (no association at the current time step).
-        """
+        """Mark this track as missed (no association at the current time step)."""
         if self.state == TrackState.Tentative:
             self.state = TrackState.Deleted
         elif self.time_since_update > self._max_age:
             self.state = TrackState.Deleted
 
     def is_tentative(self):
-        """Returns True if this track is tentative (unconfirmed).
-        """
+        """Returns True if this track is tentative (unconfirmed)."""
         return self.state == TrackState.Tentative
 
     def is_confirmed(self):

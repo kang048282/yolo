@@ -1,6 +1,6 @@
 path: E:\yolov\ultralytics\leftImg8bit
-train: images/train  # train images (relative to 'path') 128 images
-val: images/val   # val images (relative to 'path') 128 images
+train: images/train # train images (relative to 'path') 128 images
+val: images/val # val images (relative to 'path') 128 images
 test: images/test
 
 nc: 2
@@ -9,5 +9,3 @@ nc: 2
 names:
   0: car
   1: person
-
-  

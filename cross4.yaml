@@ -1,6 +1,6 @@
 path: E:\yolov\cross
 train:
-val: images   # val images (relative to 'path') 128 images
+val: images # val images (relative to 'path') 128 images
 test: images
 
 nc: 2
@@ -9,5 +9,3 @@ nc: 2
 names:
   0: car
   1: person
-
-  
