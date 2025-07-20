@@ -1,0 +1,13 @@
+path: E:\yolov\leftImg8bit_road
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val   # val images (relative to 'path') 128 images
+test: images/test
+
+nc: 2
+
+# Classes
+names:
+  0: road
+  1: sidewalk
+
+  
