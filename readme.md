@@ -18,16 +18,45 @@
 - `RoadANDSidewalk_segmentation/`：道路与人行道分割的训练模型
 - `train_model/`：不同模型训练得到的训练文件
 - `validation_results/`：模型验证与评估结果和图表
-## 环境依赖
 
-推荐使用 Conda 环境：
+## 环境依赖和数据集下载
+
+### 环境配置
+
+使用 Conda 环境管理（推荐）：
 
 ```sh
+# 方式1：使用 conda
 conda env create -f environment.yml
 conda activate yolov
-# 或使用 pip
+
+# 方式2：使用 pip
 pip install -r requirements.txt
 ```
+
+### 数据集下载与说明
+
+#### Cityscapes 数据集
+> 百度云盘下载链接：[点击下载](https://pan.baidu.com/s/1bpYXKm3bY6wZikagIG00Wg?pwd=n3ju)
+
+数据集包含两个主要部分：
+- **leftImg8bit**
+  - 用途：car和person两类目标检测
+  - 格式：YOLO检测格式
+  
+- **leftImg8bit_road**
+  - 用途：road和sidewalk两类目标分割
+  - 格式：YOLO-SEG分割格式
+
+**注意**：两个文件夹均包含images目录，建议只下载一组images以节省存储空间。
+
+#### 数据集处理说明
+本数据集基于 [Cityscapes官方数据集](https://www.cityscapes-dataset.com/) 处理得到。数据处理脚本位于 `process_data` 目录：
+
+- **change.py**: 统一数据集中images和labels的文件名
+- **json_to_yolo_RoadAndSidewalk.py**: 将JSON标签转换为YOLO分割格式
+- **json_to_yolo.py**: 将JSON标签转换为YOLO检测格式
+- **replace_class_id.py**: 批量修改标签中的类别ID（如将类别ID从5改为0）
 
 ## 快速开始
 
