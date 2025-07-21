@@ -7,14 +7,14 @@ import multiprocessing
 
 def evaluate_model():
     # 加载训练好的模型
-    model = YOLO('train_model/64b_640_C3k2toC3TR_yolov11n/best.pt')
+    model = YOLO('train_model/64b_640_origin_yolov8n/best.pt')
 
     # 创建结果保存目录
-    results_dir = "evaluation_results_64b_640_C3k2toC3TR_yolov11n"
+    results_dir = "evaluation_results_64b_640_origin_yolov8n"
     os.makedirs(results_dir, exist_ok=True)
 
     # 使用自定义数据集进行评估
-    results = model.val(data="cross4.yaml",project='validation_results',name='64b_640_C3k2toC3TR_yolov11n',save_txt=True,save_json=True, plots=True)
+    results = model.val(data="cross4.yaml",project='validation_results',name='64b_640_origin_yolov8n',save_txt=True,save_json=True, plots=True)
 
     # 提取性能指标
     metrics = results.box
