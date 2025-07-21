@@ -121,6 +121,7 @@ config = {
 python yolov_warning_0.py
 ```
 
+还有一份包含更多指标和算法的预警模型 `yolov_warning.py` ，但有些细节部分还没测试。
 
 ## 数据集格式
 
