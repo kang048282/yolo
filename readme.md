@@ -9,6 +9,7 @@
 - `video_detection.py`：视频检测与跟踪脚本
 - `evaluation_model.py`：模型评估脚本
 - `yolov_warning_0.py`：交通行为分析与预警主控脚本
+-  `yolov_warning_py`：是`yolov_warning_0.py`的升级版本，包含更多算法和指标
 - `cross4.yaml`、`data.yaml`、`data_road.yaml`：数据集配置文件 测试数据集配置、目标检测数据集配置、目标分割数据配置集
 - `yolo11n.pt`、`yolov8n.pt`、`yolov8n-seg.pt`：预训练模型权重
 - `deep_sort_pytorch/`：Deep SORT 跟踪模块
