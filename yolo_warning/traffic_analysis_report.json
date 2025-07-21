@@ -1,0 +1,635 @@
+{
+  "total_frames": 134,
+  "alert_statistics": {
+    "total_alerts": 100,
+    "alert_types": {
+      "CriticalTTC": 15,
+      "SuddenAcceleration": 4,
+      "SuddenBraking": 5,
+      "LowTTC": 24,
+      "LowPET": 38,
+      "SharpTurn": 10,
+      "PedestrianViolation": 2,
+      "CriticalPET": 2
+    },
+    "alert_levels": {
+      "danger": 19,
+      "warning": 81
+    },
+    "current_displaying": 43,
+    "risk_statistics": {
+      "ttc_violations": 70,
+      "pet_violations": 106,
+      "zone_violations": 3,
+      "speed_violations": 1,
+      "abnormal_behaviors": 89,
+      "total_interactions": 269,
+      "high_risk_interactions": 61,
+      "medium_risk_interactions": 208,
+      "risk_scores": [],
+      "avg_risk_score": 0.1055851300643106
+    }
+  },
+  "alert_history": [
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.08s",
+      "timestamp": 1753106966.3498714
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.07s",
+      "timestamp": 1753106966.3498714
+    },
+    {
+      "type": "SuddenAcceleration",
+      "level": "warning",
+      "description": "person sudden acceleration",
+      "timestamp": 1753106966.3498714
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.07s",
+      "timestamp": 1753106966.356354
+    },
+    {
+      "type": "SuddenBraking",
+      "level": "warning",
+      "description": "person sudden braking",
+      "timestamp": 1753106967.443632
+    },
+    {
+      "type": "SuddenAcceleration",
+      "level": "warning",
+      "description": "person sudden acceleration",
+      "timestamp": 1753106967.4491565
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.28s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.87s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.83s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.48s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.98s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.28s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.48s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.85s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.51s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.87s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.98s",
+      "timestamp": 1753106967.7019973
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.85s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 2.00s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.88s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 2.00s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.51s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.83s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.88s",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "SuddenBraking",
+      "level": "warning",
+      "description": "person sudden braking",
+      "timestamp": 1753106967.7177446
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.32s",
+      "timestamp": 1753106967.9542956
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.50s",
+      "timestamp": 1753106967.9542956
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.32s",
+      "timestamp": 1753106967.9542956
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.50s",
+      "timestamp": 1753106967.9542956
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106968.2247083
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106968.2397895
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.51s",
+      "timestamp": 1753106968.4406402
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.72s",
+      "timestamp": 1753106968.4463453
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.51s",
+      "timestamp": 1753106968.4463453
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.72s",
+      "timestamp": 1753106968.4463453
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106976.243684
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.45s",
+      "timestamp": 1753106976.2496924
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106976.2496924
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.45s",
+      "timestamp": 1753106976.2496924
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "person sharp turn",
+      "timestamp": 1753106976.2496924
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106976.2654226
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "person sharp turn",
+      "timestamp": 1753106976.4706435
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.72s",
+      "timestamp": 1753106976.6445088
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.63s",
+      "timestamp": 1753106976.6611407
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106976.6611407
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.72s",
+      "timestamp": 1753106976.6611407
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.63s",
+      "timestamp": 1753106976.6611407
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.91s",
+      "timestamp": 1753106976.6862824
+    },
+    {
+      "type": "PedestrianViolation",
+      "level": "danger",
+      "description": "Pedestrian enter lane region",
+      "timestamp": 1753106976.8825872
+    },
+    {
+      "type": "CriticalPET",
+      "level": "danger",
+      "description": "Dangerous post encroachment time(PET): 0.67s",
+      "timestamp": 1753106976.8825872
+    },
+    {
+      "type": "CriticalPET",
+      "level": "danger",
+      "description": "Dangerous post encroachment time(PET): 0.67s",
+      "timestamp": 1753106976.8983448
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.71s",
+      "timestamp": 1753106976.8983448
+    },
+    {
+      "type": "SuddenAcceleration",
+      "level": "warning",
+      "description": "car sudden acceleration",
+      "timestamp": 1753106976.8983448
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.71s",
+      "timestamp": 1753106976.914051
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "person sharp turn",
+      "timestamp": 1753106977.0560741
+    },
+    {
+      "type": "SuddenBraking",
+      "level": "warning",
+      "description": "car sudden braking",
+      "timestamp": 1753106977.0720031
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.73s",
+      "timestamp": 1753106978.995198
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.81s",
+      "timestamp": 1753106978.995198
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.74s",
+      "timestamp": 1753106979.0109537
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.75s",
+      "timestamp": 1753106979.0109537
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.79s",
+      "timestamp": 1753106979.0210652
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.73s",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.81s",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.74s",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.75s",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "CriticalTTC",
+      "level": "danger",
+      "description": "Dangerous collision time(TTC): 0.79s",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "SuddenAcceleration",
+      "level": "warning",
+      "description": "person sudden acceleration",
+      "timestamp": 1753106979.0270755
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.74s",
+      "timestamp": 1753106979.232092
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.74s",
+      "timestamp": 1753106979.2425344
+    },
+    {
+      "type": "SuddenBraking",
+      "level": "warning",
+      "description": "person sudden braking",
+      "timestamp": 1753106979.2425344
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.38s",
+      "timestamp": 1753106979.4230363
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.87s",
+      "timestamp": 1753106979.4230363
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.50s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.70s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.38s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.50s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.33s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.44s",
+      "timestamp": 1753106979.4388242
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.33s",
+      "timestamp": 1753106979.4545913
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.80s",
+      "timestamp": 1753106979.4545913
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106979.4545913
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.70s",
+      "timestamp": 1753106979.4545913
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.44s",
+      "timestamp": 1753106979.4647171
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.96s",
+      "timestamp": 1753106979.4647171
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.87s",
+      "timestamp": 1753106979.4647171
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.80s",
+      "timestamp": 1753106979.4647171
+    },
+    {
+      "type": "LowTTC",
+      "level": "warning",
+      "description": "Low collision time(TTC): 1.96s",
+      "timestamp": 1753106979.4647171
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.61s",
+      "timestamp": 1753106979.5810397
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.71s",
+      "timestamp": 1753106979.596776
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.71s",
+      "timestamp": 1753106979.596776
+    },
+    {
+      "type": "SuddenBraking",
+      "level": "warning",
+      "description": "person sudden braking",
+      "timestamp": 1753106979.596776
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.83s",
+      "timestamp": 1753106979.6125193
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "car sharp turn",
+      "timestamp": 1753106979.6125193
+    },
+    {
+      "type": "PedestrianViolation",
+      "level": "danger",
+      "description": "Pedestrian enter lane region",
+      "timestamp": 1753106979.6125193
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.61s",
+      "timestamp": 1753106979.6125193
+    },
+    {
+      "type": "LowPET",
+      "level": "warning",
+      "description": "Low post encroachment time(PET): 1.83s",
+      "timestamp": 1753106979.6125193
+    },
+    {
+      "type": "SharpTurn",
+      "level": "warning",
+      "description": "person sharp turn",
+      "timestamp": 1753106979.6125193
+    }
+  ]
+}

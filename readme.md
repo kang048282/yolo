@@ -8,7 +8,7 @@
 - `train_seg.py`：分割模型训练脚本
 - `video_detection.py`：视频检测与跟踪脚本
 - `evaluation_model.py`：模型评估脚本
-- `yolov_warning.py`：交通行为分析与预警主控脚本
+- `yolov_warning_0.py`：交通行为分析与预警主控脚本
 - `cross4.yaml`、`data.yaml`、`data_road.yaml`：数据集配置文件 测试数据集配置、目标检测数据集配置、目标分割数据配置集
 - `yolo11n.pt`、`yolov8n.pt`、`yolov8n-seg.pt`：预训练模型权重
 - `deep_sort_pytorch/`：Deep SORT 跟踪模块
@@ -98,7 +98,7 @@ python evaluation_model.py
 
 ### 4. 视频检测与行为分析
 
-在 `yolov_warning.py` 中配置以下参数:
+在 `yolov_warning_0.py` 中配置以下参数:
 
 ```python
 config = {
@@ -118,7 +118,7 @@ config = {
 
 运行分析:
 ```sh
-python yolov_warning.py
+python yolov_warning_0.py
 ```
 
 
